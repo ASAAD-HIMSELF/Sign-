@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h1>CREATE A NEW ACCOUNT</h1>
+            <hr>
+            <div class="profile">
+                <input type="text" placeholder="First Name" required name="First Name">
+                <input type="text" placeholder="Surname" required name="Surname">
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email Address" required title="must be a valid email address"
+                    id="email">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" required title="Must be at least 8 characters"
+                    inputmode="numeric" autocomplete="" id="password">
+                <img src="Asset/Images/eye-close.png" width="25" alt="Eye Icon" id="eyeIcon">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Confirm Password" required title="Must be at least 8 characters"
+                    inputmode="numeric" autocomplete="" id="passwordOne">
+                <img src="Asset/Images/eye-close.png" width="25" alt="Eye Icon" id="eyeIconOne">
+            </div>
+        </form>
+        <button onclick="signUp()" class="submit">Sign Up</button>
+        <div class="otherwise">
+            <p>Already have an account?</p>
+            <a href="sign_in_page.html" aria-label="Already have an account?">Sign In</a>
+        </div>
+    </div>
+</body>
+<script type="module" src="script.js"></script>
+
+</html>

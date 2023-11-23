@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>DASH BOARD</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <img src="Asset/Images/download-removebg-preview (1).png" width="100" height="100" alt="">
+            <div id="profileContainer">
+                <div id="profileImage"></div>
+                <div id="user-info">
+                    <p id="accountType"></p>
+                    <p id="profileName"></p>
+                    <p id="profileEmail"></p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div id="saved"></div>
+        <input type="text" placeholder="Name" required id="todo">
+        <input type="text" placeholder="Description" required id="todoDesc">
+        <input type="file" id="myFile">
+        <input onclick="addTodo()" type="submit" id="progress">
+    </header>
+    <div id="progressBar"></div>
+    <main>
+        <div id="display"></div>
+    </main>
+</body>
+<script type="module" src="dashboard.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>

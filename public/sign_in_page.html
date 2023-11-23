@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h1>Welcome back!</h1>
+            <p class="title"></p>
+            <hr>
+            <div class="form-group">
+                <input type="email" placeholder="Email Address" required title="must be a valid email address"
+                    id="email">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" required title="Must be at least 8 characters"
+                    inputmode="numeric" autocomplete="" id="password">
+                <img src="Asset/Images/eye-close.png" width="25" alt="Eye Icon" id="eyeIcon">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Confirm Password" required title="Must be at least 8 characters"
+                    inputmode="numeric" autocomplete="" id="passwordOne">
+                <img src="Asset/Images/eye-close.png" width="25" alt="Eye Icon" id="eyeIconOne">
+            </div>
+            <div class="forgot">
+                <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
+            </div>
+        </form>
+        <button onclick="signIn()" class="submit">Sign In</button>
+        <div class="otherwise">
+            <p>Don't have an account?</p>
+            <a href="index.html" aria-label="Already have an account?">Sign Up</a>
+        </div>
+        <div class="social-message">
+            <div class="line"></div>
+            <p class="message">Sign in with social accounts</p>
+            <div class="line"></div>
+        </div>
+        <div class="social-icons">
+            <button aria-label="Log in with Google" onclick="signInGoogle()" class="icon">
+                <img src="Asset/Images/download__1_-removebg-preview.png" width="50" alt="">
+            </button>
+            <button aria-label="Log in with GitHub" onclick="signInGitHub()" class="icon">
+                <img src="Asset/Images/download-removebg-preview.png" width="50" alt="">
+            </button>
+        </div>
+    </div>
+</body>
+<script type="module" src="script.js"></script>
+
+</html>
